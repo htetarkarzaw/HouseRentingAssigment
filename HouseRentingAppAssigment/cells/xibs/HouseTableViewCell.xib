@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="282" id="KGk-i7-Jjw" customClass="HouseTableViewCell" customModule="HouseRentingAppAssigment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="282"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="486" height="281.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKL-fg-hdQ" customClass="CardView" customModule="HouseRentingAppAssigment" customModuleProvider="target">
+                        <rect key="frame" x="4" y="8" width="478" height="265.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_house" translatesAutoresizingMaskIntoConstraints="NO" id="8Ip-yE-QXw">
+                                <rect key="frame" x="0.0" y="0.0" width="478" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5DN-oI-5nq"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-HX-YY5" customClass="CardView" customModule="HouseRentingAppAssigment" customModuleProvider="target">
+                                <rect key="frame" x="16" y="105" width="95" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNa-OQ-dRE">
+                                        <rect key="frame" x="16" y="4" width="63" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="BNa-OQ-dRE" firstAttribute="top" secondItem="nx3-HX-YY5" secondAttribute="top" constant="4" id="9pG-fI-alX"/>
+                                    <constraint firstItem="BNa-OQ-dRE" firstAttribute="leading" secondItem="nx3-HX-YY5" secondAttribute="leading" constant="16" id="TlW-qe-5py"/>
+                                    <constraint firstAttribute="trailing" secondItem="BNa-OQ-dRE" secondAttribute="trailing" constant="16" id="Xn0-QQ-Bj6"/>
+                                    <constraint firstAttribute="bottom" secondItem="BNa-OQ-dRE" secondAttribute="bottom" constant="4" id="m2k-fl-JT0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NY3-Wl-jlI">
+                                <rect key="frame" x="0.0" y="150" width="478" height="115.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_location" translatesAutoresizingMaskIntoConstraints="NO" id="Pkn-0f-lFP">
+                                        <rect key="frame" x="16" y="16" width="30" height="30"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0093617555430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Xow-cj-LKu"/>
+                                            <constraint firstAttribute="width" constant="30" id="hI5-HC-Plq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West minster, London" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idb-wx-cGK">
+                                        <rect key="frame" x="54" y="22.5" width="416" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sqft" translatesAutoresizingMaskIntoConstraints="NO" id="1mr-WS-5Og">
+                                        <rect key="frame" x="16" y="62" width="30" height="30"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0093617555430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="3Gg-QC-Y9u"/>
+                                            <constraint firstAttribute="height" constant="30" id="h84-zJ-VyY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3200 sqft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOc-S7-NPg">
+                                        <rect key="frame" x="54" y="68.5" width="63.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="pFj-2U-YDt">
+                                        <rect key="frame" x="149.5" y="62" width="30" height="30"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0093617555430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4d2-G3-md8"/>
+                                            <constraint firstAttribute="width" constant="30" id="KRf-rl-CVZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 bedrooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pU6-Gt-m69">
+                                        <rect key="frame" x="187.5" y="68.5" width="78" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1mr-WS-5Og" firstAttribute="trailing" secondItem="Pkn-0f-lFP" secondAttribute="trailing" id="0Up-Yf-PeY"/>
+                                    <constraint firstItem="xOc-S7-NPg" firstAttribute="leading" secondItem="1mr-WS-5Og" secondAttribute="trailing" constant="8" id="18d-zd-eJN"/>
+                                    <constraint firstItem="Pkn-0f-lFP" firstAttribute="top" secondItem="NY3-Wl-jlI" secondAttribute="top" constant="16" id="4HD-Er-MWv"/>
+                                    <constraint firstItem="idb-wx-cGK" firstAttribute="centerY" secondItem="Pkn-0f-lFP" secondAttribute="centerY" id="CRR-iZ-wJi"/>
+                                    <constraint firstItem="pFj-2U-YDt" firstAttribute="centerY" secondItem="xOc-S7-NPg" secondAttribute="centerY" id="KJh-CD-eeH"/>
+                                    <constraint firstItem="xOc-S7-NPg" firstAttribute="centerY" secondItem="1mr-WS-5Og" secondAttribute="centerY" id="Lxb-WO-cY7"/>
+                                    <constraint firstItem="pU6-Gt-m69" firstAttribute="leading" secondItem="pFj-2U-YDt" secondAttribute="trailing" constant="8" id="W4o-cd-SNI"/>
+                                    <constraint firstItem="pU6-Gt-m69" firstAttribute="centerY" secondItem="pFj-2U-YDt" secondAttribute="centerY" id="dL9-xd-eIo"/>
+                                    <constraint firstAttribute="trailing" secondItem="idb-wx-cGK" secondAttribute="trailing" constant="8" id="dqt-h1-aMi"/>
+                                    <constraint firstItem="Pkn-0f-lFP" firstAttribute="leading" secondItem="NY3-Wl-jlI" secondAttribute="leading" constant="16" id="hJs-v9-5Ca"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1mr-WS-5Og" secondAttribute="bottom" constant="16" id="kJQ-bI-9qW"/>
+                                    <constraint firstItem="idb-wx-cGK" firstAttribute="leading" secondItem="Pkn-0f-lFP" secondAttribute="trailing" constant="8" id="oQ3-hD-IOD"/>
+                                    <constraint firstItem="pFj-2U-YDt" firstAttribute="leading" secondItem="xOc-S7-NPg" secondAttribute="trailing" constant="32" id="ubK-lp-LUb"/>
+                                    <constraint firstItem="1mr-WS-5Og" firstAttribute="leading" secondItem="Pkn-0f-lFP" secondAttribute="leading" id="vgi-FX-jJj"/>
+                                    <constraint firstItem="1mr-WS-5Og" firstAttribute="top" secondItem="Pkn-0f-lFP" secondAttribute="bottom" constant="16" id="yg9-AN-5f0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1A-tK-Fuw" customClass="CardView" customModule="HouseRentingAppAssigment" customModuleProvider="target">
+                                <rect key="frame" x="396" y="128" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_near_me" translatesAutoresizingMaskIntoConstraints="NO" id="AtJ-qZ-bR6">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HzE-Vd-qrX"/>
+                                            <constraint firstAttribute="width" constant="50" id="ITi-Fo-spK"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AtJ-qZ-bR6" secondAttribute="trailing" id="4u2-ce-D9a"/>
+                                    <constraint firstItem="AtJ-qZ-bR6" firstAttribute="top" secondItem="r1A-tK-Fuw" secondAttribute="top" id="bXJ-3Q-kju"/>
+                                    <constraint firstAttribute="bottom" secondItem="AtJ-qZ-bR6" secondAttribute="bottom" id="fYw-Md-UQn"/>
+                                    <constraint firstItem="AtJ-qZ-bR6" firstAttribute="leading" secondItem="r1A-tK-Fuw" secondAttribute="leading" id="jp3-RL-vhJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NY3-Wl-jlI" firstAttribute="top" secondItem="8Ip-yE-QXw" secondAttribute="bottom" id="BkH-Nd-Puu"/>
+                            <constraint firstAttribute="trailing" secondItem="NY3-Wl-jlI" secondAttribute="trailing" id="Fph-ZH-pQn"/>
+                            <constraint firstItem="r1A-tK-Fuw" firstAttribute="centerY" secondItem="MKL-fg-hdQ" secondAttribute="centerY" constant="20" id="GDw-19-U9n"/>
+                            <constraint firstItem="8Ip-yE-QXw" firstAttribute="leading" secondItem="MKL-fg-hdQ" secondAttribute="leading" id="HVw-fO-ahv"/>
+                            <constraint firstAttribute="trailing" secondItem="r1A-tK-Fuw" secondAttribute="trailing" constant="32" id="KTe-rR-icx"/>
+                            <constraint firstAttribute="bottom" secondItem="NY3-Wl-jlI" secondAttribute="bottom" id="URo-M3-DVS"/>
+                            <constraint firstItem="nx3-HX-YY5" firstAttribute="leading" secondItem="MKL-fg-hdQ" secondAttribute="leading" constant="16" id="bqW-bE-WPC"/>
+                            <constraint firstItem="8Ip-yE-QXw" firstAttribute="top" secondItem="MKL-fg-hdQ" secondAttribute="top" id="gDw-al-FyG"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ip-yE-QXw" secondAttribute="trailing" id="jlD-tz-yqo"/>
+                            <constraint firstItem="NY3-Wl-jlI" firstAttribute="top" secondItem="nx3-HX-YY5" secondAttribute="bottom" constant="16" id="mSi-zP-hek"/>
+                            <constraint firstItem="NY3-Wl-jlI" firstAttribute="leading" secondItem="MKL-fg-hdQ" secondAttribute="leading" id="uWC-O4-Bqr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="MKL-fg-hdQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9nc-fP-To3"/>
+                    <constraint firstAttribute="bottom" secondItem="MKL-fg-hdQ" secondAttribute="bottom" constant="8" id="OP5-uf-lb0"/>
+                    <constraint firstAttribute="trailing" secondItem="MKL-fg-hdQ" secondAttribute="trailing" constant="4" id="X1Z-2b-2Od"/>
+                    <constraint firstItem="MKL-fg-hdQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="c6l-mb-qZk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnViewDetail" destination="r1A-tK-Fuw" id="e0K-Jy-y3y"/>
+                <outlet property="ivHouse" destination="8Ip-yE-QXw" id="taf-LM-lAP"/>
+                <outlet property="lblLocation" destination="idb-wx-cGK" id="Eyo-E4-VuY"/>
+                <outlet property="lblNoBed" destination="pU6-Gt-m69" id="Ypt-8v-61K"/>
+                <outlet property="lblPrice" destination="BNa-OQ-dRE" id="j7X-NG-aLl"/>
+                <outlet property="lblSqft" destination="xOc-S7-NPg" id="RdC-5y-ree"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="115.17857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_bedroom" width="25" height="25"/>
+        <image name="icon_location" width="25" height="25"/>
+        <image name="icon_near_me" width="25" height="25"/>
+        <image name="icon_sqft" width="25" height="25"/>
+        <image name="img_house" width="500" height="333.5"/>
+    </resources>
+</document>

@@ -10,5 +10,6 @@ target 'HouseRentingAppAssigment' do
   pod 'SDWebImage', '~> 5.0'
   pod 'Alamofire'
   pod 'NVActivityIndicatorView'
+  pod 'SwiftyJSON'
 
 end

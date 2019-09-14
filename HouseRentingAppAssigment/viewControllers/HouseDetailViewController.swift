@@ -19,6 +19,7 @@ class HouseDetailViewController: UIViewController {
     @IBOutlet weak var ivHouse: UIImageView!
     @IBOutlet weak var lblHouseTitle: UILabel!
     @IBOutlet weak var lblHouseDescription: UILabel!
+    @IBOutlet weak var btnBack: UIImageView!
     
     var house : HouseVO?
     
@@ -27,13 +28,24 @@ class HouseDetailViewController: UIViewController {
         let imgLink = house?.houseImageUrl ?? ""
         ivHouse.sd_setImage(with: URL(string: imgLink), placeholderImage: UIImage(named: "placeholder"))
         lblPrice.text = "$\(String(describing: house?.address ?? ""))"
-        lblsqft.text = "\(String(describing: house?.squareFeet ?? "")) sqft"
+        lblsqft.text = "\(String(describing: house?.squareFeet ?? 0)) sqft"
         lblHouseTitle.text = house?.name ?? "Single Family House"
         lblHouseDescription.text = house?.description ?? "Summer has come and passed The innocent can never last Wake me up when September ends  Like my fathers come to pass Seven years has gone so fast Wake me up when September ends Here comes the rain again Falling from the stars Drenched in my pain again Becoming who we are As my memory rests But never forgets what I lost Wake me up when September ends Summer has come and passed The innocent can never last Wake me up when September ends  Ring out the bells again Like we did when spring began Wake me up when September ends Here comes the rain again Falling from the stars Drenched in my pain again Becoming who we are As my memory rests But never forgets what I lost Wake me up when September ends Summer has come and passed The innocent can never last Wake me up when September ends Like my father's come to pass Twenty years has gone so fast Wake me up when September ends  Wake me up when September ends Wake me up when September ends"
         // Do any additional setup after loading the view.
+        initGestureRecognizer()
     }
     
 
+    func initGestureRecognizer(){
+        let tagGesture = UITapGestureRecognizer(target: self, action: #selector(onClickBack))
+        btnBack.isUserInteractionEnabled = true
+        btnBack.addGestureRecognizer(tagGesture)
+    }
+    
+    @objc func onClickBack(){
+        //self.navigationController?.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

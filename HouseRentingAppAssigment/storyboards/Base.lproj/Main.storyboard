@@ -199,10 +199,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEq-Qz-fC2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lch-t9-EYr">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_house" translatesAutoresizingMaskIntoConstraints="NO" id="W6M-MQ-3bE">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="333.5"/>
@@ -521,8 +521,8 @@
                         <constraints>
                             <constraint firstItem="Hf0-vL-i0D" firstAttribute="leading" secondItem="8Hb-hZ-EpL" secondAttribute="leading" constant="16" id="Err-Nf-1pE"/>
                             <constraint firstItem="Hf0-vL-i0D" firstAttribute="leading" secondItem="1Nu-lu-OFq" secondAttribute="leading" constant="16" id="K6Z-iS-spZ"/>
-                            <constraint firstItem="IEq-Qz-fC2" firstAttribute="top" secondItem="1Nu-lu-OFq" secondAttribute="top" id="Pgb-Wg-jTn"/>
                             <constraint firstAttribute="trailing" secondItem="IEq-Qz-fC2" secondAttribute="trailing" id="RHZ-82-xmE"/>
+                            <constraint firstItem="IEq-Qz-fC2" firstAttribute="top" secondItem="8Hb-hZ-EpL" secondAttribute="top" id="SGT-59-TLd"/>
                             <constraint firstItem="IEq-Qz-fC2" firstAttribute="leading" secondItem="1Nu-lu-OFq" secondAttribute="leading" id="TZQ-Uc-zQC"/>
                             <constraint firstItem="8Hb-hZ-EpL" firstAttribute="trailing" secondItem="Hf0-vL-i0D" secondAttribute="trailing" constant="16" id="Y2e-Fo-kaN"/>
                             <constraint firstAttribute="bottom" secondItem="Hf0-vL-i0D" secondAttribute="bottom" constant="32" id="aP4-CK-qvO"/>
@@ -532,6 +532,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="p6g-qF-cbo"/>
                     <connections>
+                        <outlet property="btnBack" destination="3nQ-eJ-2Kq" id="hkW-j7-jEz"/>
                         <outlet property="ivHouse" destination="W6M-MQ-3bE" id="FeW-j4-7D5"/>
                         <outlet property="lblAddress" destination="3PY-JJ-IGx" id="0wu-fW-gEM"/>
                         <outlet property="lblBedroom" destination="6SK-GS-Dg2" id="lCc-5U-XId"/>
@@ -545,7 +546,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dsm-hA-MdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4647.826086956522" y="479.46428571428567"/>
+            <point key="canvasLocation" x="3953.6231884057975" y="137.94642857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Lo2-GL-W39">
@@ -673,22 +674,22 @@
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="xBR-d7-rvG">
+        <scene sceneID="k0O-kl-XYv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S0e-73-CDp" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wo9-5c-9RN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lKd-OJ-9Dj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eWe-Xa-0iZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="wyQ-Kk-iE3" kind="relationship" relationship="rootViewController" id="RUQ-Ex-KfP"/>
+                        <segue destination="wyQ-Kk-iE3" kind="relationship" relationship="rootViewController" id="mtr-bJ-2Z0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H9M-f5-bDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTt-1K-5ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3737.68115942029" y="479.46428571428567"/>
+            <point key="canvasLocation" x="3042.0289855072465" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>

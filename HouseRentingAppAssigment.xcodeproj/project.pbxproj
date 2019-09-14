@@ -26,6 +26,8 @@
 		6555EF01232C41A3003662A0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555EF00232C41A3003662A0 /* BaseViewController.swift */; };
 		6555EF04232C48D5003662A0 /* HouseItemListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555EF03232C48D5003662A0 /* HouseItemListDelegate.swift */; };
 		6555EF06232C4911003662A0 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555EF05232C4911003662A0 /* HouseDetailViewController.swift */; };
+		6555EF08232CF28B003662A0 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555EF07232CF28B003662A0 /* BaseResponse.swift */; };
+		6555EF0B232D04CA003662A0 /* HouseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555EF0A232D04CA003662A0 /* HouseRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		6555EF00232C41A3003662A0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6555EF03232C48D5003662A0 /* HouseItemListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseItemListDelegate.swift; sourceTree = "<group>"; };
 		6555EF05232C4911003662A0 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		6555EF07232CF28B003662A0 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		6555EF0A232D04CA003662A0 /* HouseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRequest.swift; sourceTree = "<group>"; };
 		7D48FCCB6E1F91B8A4C5BEF2 /* Pods_HouseRentingAppAssigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseRentingAppAssigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9286DCC82E969BCB9C68743E /* Pods-HouseRentingAppAssigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseRentingAppAssigment.debug.xcconfig"; path = "Target Support Files/Pods-HouseRentingAppAssigment/Pods-HouseRentingAppAssigment.debug.xcconfig"; sourceTree = "<group>"; };
 		C6559757782A42EA70662F14 /* Pods-HouseRentingAppAssigment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseRentingAppAssigment.release.xcconfig"; path = "Target Support Files/Pods-HouseRentingAppAssigment/Pods-HouseRentingAppAssigment.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 		6555EEF4232C3EC1003662A0 /* vos */ = {
 			isa = PBXGroup;
 			children = (
+				6555EF09232D049E003662A0 /* requests */,
 				6555EEF7232C3F6C003662A0 /* responses */,
 				6555EEF5232C3ED1003662A0 /* HouseVO.swift */,
 			);
@@ -187,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				6555EEF8232C3F7B003662A0 /* HouseResponse.swift */,
+				6555EF07232CF28B003662A0 /* BaseResponse.swift */,
 			);
 			path = responses;
 			sourceTree = "<group>";
@@ -213,6 +219,14 @@
 				6555EF03232C48D5003662A0 /* HouseItemListDelegate.swift */,
 			);
 			path = delegates;
+			sourceTree = "<group>";
+		};
+		6555EF09232D049E003662A0 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				6555EF0A232D04CA003662A0 /* HouseRequest.swift */,
+			);
+			path = requests;
 			sourceTree = "<group>";
 		};
 		F8E22BE41E12935CD757D53B /* Frameworks */ = {
@@ -339,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6555EF08232CF28B003662A0 /* BaseResponse.swift in Sources */,
 				6555EEEF232C3414003662A0 /* Extension.swift in Sources */,
 				6555EEFC232C3FC3003662A0 /* NetwrokClient.swift in Sources */,
 				6555EEF6232C3ED1003662A0 /* HouseVO.swift in Sources */,
@@ -348,6 +363,7 @@
 				6555EF06232C4911003662A0 /* HouseDetailViewController.swift in Sources */,
 				6555EF01232C41A3003662A0 /* BaseViewController.swift in Sources */,
 				6555EEFF232C403B003662A0 /* HouseModel.swift in Sources */,
+				6555EF0B232D04CA003662A0 /* HouseRequest.swift in Sources */,
 				6555EEED232C33F1003662A0 /* CardView.swift in Sources */,
 				6555EEF9232C3F7B003662A0 /* HouseResponse.swift in Sources */,
 				6555EEF3232C3462003662A0 /* AppConstants.swift in Sources */,

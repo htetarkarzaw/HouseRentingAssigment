@@ -25,7 +25,7 @@ class HouseTableViewCell: UITableViewCell {
                 let imgLink = houseVo.houseImageUrl ?? ""
                 ivHouse.sd_setImage(with: URL(string: imgLink), placeholderImage: UIImage(named: "placeholder"))
                 lblPrice.text = "$\(String(describing: houseVo.address ?? ""))"
-                lblSqft.text = "\(String(describing: houseVo.squareFeet ?? "")) sqft"
+                lblSqft.text = "\(String(describing: houseVo.squareFeet ?? 0)) sqft"
             }
         }
     }
